@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>DD Boots | Botinas Country</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f1eb;
+      color: #2b1b12;
+    }
+
+    header {
+      background: #1d110c;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #d9a441;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(
+        rgba(29,17,12,.75),
+        rgba(29,17,12,.75)
+      );
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #d9a441;
+      color: #1d110c;
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .produtos {
+      padding: 60px 7%;
+      text-align: center;
+    }
+
+    .produtos h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .produto {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    }
+
+    .produto img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .produto h3 {
+      margin: 15px 0 8px;
+    }
+
+    .preco {
+      color: #a66b16;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #1d110c;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">DD BOOTS</div>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#produtos">Botinas</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div>
+    <h1>DD Boots</h1>
+
+    <p>
+      Estilo, qualidade e tradição em cada passo.
+    </p>
+
+    <a href="#produtos" class="btn">
+      VER BOTINAS
+    </a>
+  </div>
+</section>
+
+<section class="produtos" id="produtos">
+
+  <h2>Botinas em Destaque</h2>
+
+  <div class="grid">
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/500x600" alt="Botina DD Boots">
+      <h3>Botina Country 01</h3>
+      <div class="preco">R$ 199,90</div>
+      <a class="btn" href="#contato">Comprar</a>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/500x600" alt="Botina DD Boots">
+      <h3>Botina Country 02</h3>
+      <div class="preco">R$ 219,90</div>
+      <a class="btn" href="#contato">Comprar</a>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/500x600" alt="Botina DD Boots">
+      <h3>Botina Country 03</h3>
+      <div class="preco">R$ 229,90</div>
+      <a class="btn" href="#contato">Comprar</a>
+    </div>
+
+    <div class="produto">
+      <img src="https://via.placeholder.com/500x600" alt="Botina DD Boots">
+      <h3>Botina Country 04</h3>
+      <div class="preco">R$ 239,90</div>
+      <a class="btn" href="#contato">Comprar</a>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="produtos" id="contato">
+
+  <h2>Faça seu pedido</h2>
+
+  <p style="margin-bottom:25px;">
+    Entre em contato com a DD Boots pelo WhatsApp.
+  </p>
+
+  <a
+    class="btn"
+    href="https://wa.me/5500000000000"
+    target="_blank">
+    FALAR NO WHATSAPP
+  </a>
+
+</section>
+
+<footer>
+  © 2026 DD Boots — Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
